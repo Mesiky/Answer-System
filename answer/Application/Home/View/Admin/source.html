@@ -1,0 +1,28 @@
+<include file="Index/header" />
+	<body>
+		<div class=" body bg_body">
+		   		<div class="cover"></div>
+		 <div id="content" class="container" style="padding-top: 20px">
+		 	<a href="/answer/index.php/Excel/exData" class="exexcel excel">导出数据并生成excel</a>
+        <form action="/answer/index.php/Excel/imData" method="post" enctype="multipart/form-data">
+            <input type="file" name="import" class="file"  />
+            <input type="hidden" name="table" value="tablename"/>
+            <input type="submit" value="excel数据导入数据库" class="excel imexcel"/>
+        </form>
+		<div id="nav">
+			<a href="/answer/index.php" class="glyphicon glyphicon-home"></a>
+			<a href="/answer/index.php/admin" class="glyphicon glyphicon-edit"></a>
+			<a href="/answer/index.php/admin/listshow" class="glyphicon glyphicon-th-large"></a>
+			<a href="/answer/index.php/admin/source" class="glyphicon glyphicon-new-window nav_atv"></a>
+		</div>
+		</div>
+		   	
+
+	
+
+	<!-- jQuery Easing -->
+	<script src="/answer/Public/js/bootstrap.min.js"></script>
+	<!-- Main -->
+	</body>
+</html>
+

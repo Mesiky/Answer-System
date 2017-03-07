@@ -1,0 +1,59 @@
+<include file="Index/header" />
+	<body>
+		<div class=" body bg_body">
+		   		<div class="cover"></div>
+		   		<div id="content" class="container" style="padding-top: 20px">
+		   			<table class="table table-bordered table-condensed text-center"  style="font-size:14px;color:#f6f6f6">
+						<thead>
+							<tr>
+								<td>序列号</td>
+								<td>题目</td>
+								<td>A答案</td>
+								<td>B答案</td>
+								<td>C答案</td>
+								<td>D答案</td>
+								<td>E答案</td>
+								<td>答案</td>
+								<td>操作</td>
+							</tr>
+						</thead>
+						<tbody>
+							<volist name="res" id="res">
+							<tr>
+								<td>{$res['aswer_id']}</td>
+								<td width="30%">{$res['awe_tit']}</td>
+								<td>{$res['resa']}</td>
+								<td>{$res['resb']}</td>
+								<td>{$res['resc']}</td>
+								<td>{$res['resd']}</td>
+								<td>{$res['rese']}</td>
+								<td>{$res['real_res']}</td>
+								<td style="vertical-align: middle;"><a href="/answer/index.php/admin/del/id/{$res['aswer_id']}" class="glyphicon glyphicon-remove-circle"></a></td>
+							</tr>
+							</volist>
+						</tbody>
+					</table>
+					<nav aria-label="Page navigation" class="nav_bar">
+					  <ul class="pagination pagination-sm">
+						{$show}
+					  </ul>
+					</nav> 	
+		<div id="nav">
+			<a href="/answer/index.php" class="glyphicon glyphicon-home"></a>
+			<a href="/answer/index.php/admin" class="glyphicon glyphicon-edit"></a>
+			<a href="/answer/index.php/admin/listshow" class="glyphicon glyphicon-th-large nav_atv"></a>
+			<a href="/answer/index.php/admin/source" class="glyphicon glyphicon-new-window"></a>
+		</div>
+		</div>
+		   	
+
+	
+
+	<!-- jQuery Easing -->
+	<script src="/answer/Public/js/bootstrap.min.js"></script>
+	<!-- Main -->
+	<script src="/answer/Public/js/main.js"></script>
+	<script src="/answer/Public/js/common.js"></script>
+	</body>
+</html>
+
